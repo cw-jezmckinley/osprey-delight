@@ -22,7 +22,8 @@
               </select>
         </div>
         {{- end }}
-        <div class="col-xs-12{{ if isset .Site.Params.Contact "select" }} col-sm-6{{ end }}"><input type="text" name="_subject" aria-label="email subject" placeholder="{{ i18n "subject" }}" required></div>
+        <div class="col-xs-12{{ if isset .Site.Params.Contact "select" }} col-sm-6{{ end }}">
+          <input type="text" name="_subject" aria-label="email subject" placeholder="{{ i18n "subject" }}" required></div>
         <div class="col-xs-12">
             <textarea name="message" aria-label="Please enable JS" required></textarea>
           </div>

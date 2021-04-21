@@ -18,7 +18,6 @@
     var name = $('input[name=name]').value,
       email = $('input[name=email]').value,
       subject = $('input[name=_subject]').value,
-      // matter = $('select[name=matter]').value,
       message = realmsg.value,
       honeypot = honeypotmsg.value
 
@@ -31,6 +30,11 @@
         _subject: subject,
         message: message,
       }
+
+    if ($('select[name=matter]')) {
+      data['_matter'] = $('select[name=matter]').value
+    }
+
     if (honeypot !== "") {
       data._anti_spam_honeypot = honeypot
     }
