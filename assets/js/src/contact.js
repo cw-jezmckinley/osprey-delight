@@ -29,7 +29,6 @@
         _replyto: email,
         email: email,
         _subject: subject,
-        _matter: matter,
         message: message,
       }
     if (honeypot !== "") {
