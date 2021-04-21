@@ -18,7 +18,7 @@
     var name = $('input[name=name]').value,
       email = $('input[name=email]').value,
       subject = $('input[name=_subject]').value,
-      matter = $('select[name=matter]').value,
+      // matter = $('select[name=matter]').value,
       message = realmsg.value,
       honeypot = honeypotmsg.value
 
